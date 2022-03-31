@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dis.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="titulo">Sublination</h1>
+      <img
+        src="img/subli.PNG"
+        alt="Picture of Laura Jones"
+        width="40"
+        height="40"
+        class="author-img"
+      />
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ropabien.html">Catalogo</a>
+        <a href="publicidad.html">Mercadotecnia</a>
+      </nav>
+    </header>
+
+    <!-- GRID OPCIONES DE COMPRA -->
+  <div class="grid-container">
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/playerablanca.jpg" height="300" width="300"/><br />
+      $<span class="price">25</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/Playera-sublimada-caballero.jpg" height="300" width="300"/><br />
+      $<span class="price">30</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/calcetablanca.jpg" height="300" width="300"/><br />
+      $<span class="price">20</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/calcetasublimada.jpg" height="300" width="300"/><br />
+      $<span class="price">40</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/sudaderablanca.jpg" height="300" width="300"/><br />
+      $<span class="price">100</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/sudaderasublimada.jpg" height="300" width="300"/><br />
+      $<span class="price">200</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/leggins.jpg" height="300" width="300"/><br />
+      $<span class="price">100</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/legginssublimados.jpg" height="300" width="300"/><br />
+      $<span class="price">200</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/bolsablanca.png" height="300" width="300"/><br />
+      $<span class="price">60</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/bolsasublimada.jpg" height="300" width="300"/><br />
+      $<span class="price">100</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/mascarillas_plotter.jpg" height="300" width="300"/><br />
+      $<span class="price">1500</span><br />
+      Añadir al carrito
+    </a></div>
+    <div class="grid-item"><a href="#" onclick="addToCart(this);">
+      <img src="img/sublimacion_e.jpg" height="300" width="300"/><br />
+      $<span class="price">2000</span><br />
+      Añadir al carrito
+    </a></div>
+  </div>
+  
+  <!-- CARRITO DE COMPRAS: -->
+  <h1>Carrito De Compras</h1>
+  <div class="grid-container">
+    <div id="info-table" style="float: right">
+      <table id="mytable"  width="1200" align="center">
+        <tr>
+          <th style="float: left">Seleccionar Todo<input type="checkbox" id="allCheck" onclick="selectAll()"/></th>
+        </tr>
+      </table>
+    </div>
+    <div class="total-div"><span style="font-size:large">Precio Total De Tu Compra: $<span id="resultTotalMoney">0</span> Pesos</span></div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="btorinter-div">
+      <button onclick="selectDelete()" class="btdelete">Eliminar seleccionado</button>
+    </div>
+    <div>
+      <button class="btbuy" onclick="buyNow()">Comprar</button>
+    </div>
+  </div>
+  </div>
+  
+  <footer>
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <h4>Telefono</h4>
+        <p>477 401 8637</p>
+      </div>
+      <div class="content-foo">
+        <h4>Email</h4>
+        <p>Sublination@gmail.com</p>
+      </div>
+      <div class="content-foo">
+        <h4>Ubicacion</h4>
+        <p>Av Insurgentes 2500, Vista Hermosa, 64620 Monterrey, N.L.</p>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy; Sublination</h2>
+  </footer>
+
+  <script src="carrito.js"></script>
+  </body>
+</html>
